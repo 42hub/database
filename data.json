@@ -4,5 +4,17 @@
 		"bday": "14.04.04",
 		"tlf": "954 723 512",
 		"mail": "oscsc@kvs-lyngdal.no"
+	},
+	"Amy Scar": {
+		"room": "B17",
+		"bday": "17.08.03",
+		"tlf": "984 52 751",
+		"mail": "amysc@kvs-lyngdal.no"
+	},
+	"Sofie Scar": {
+		"room": "B17",
+		"bday": "14.04.04",
+		"tlf": "987 41 266",
+		"mail": "sofsc@kvs-lyngdal.no"
 	}
 }

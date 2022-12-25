@@ -4,18 +4,15 @@ body {
 }
 
 .main {
-    max-width: 1500px;
+    max-width: 1000px;
     background-color: rgb(179, 172, 172);
 
-    border:2px solid Tomato;
 
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-
-
 }
+
 
 h1 {
     color:rgb(45, 46, 61);
