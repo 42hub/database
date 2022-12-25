@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(88, 84, 84);
+    font-family: 'Raleway', Verdana;
+}
+
+.main {
+    max-width: 1500px;
+    background-color: rgb(179, 172, 172);
+
+    border:2px solid Tomato;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+
+}
+
+h1 {
+    color:rgb(45, 46, 61);
+
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    color:rgb(45, 46, 61);
+
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+    font-size: 30px;
+}

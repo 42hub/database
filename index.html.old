@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+
+    <body>
+
+        <div class="main">
+
+            <h1>Escape to Adventure</h1>
+
+            <p>
+            Escape to Adventure is an action-packed video game that transports players to exciting and imaginative worlds. As you embark on your journey, you'll face off against a variety of enemies and overcome obstacles, all while collecting valuable treasures and solving challenging puzzles. The intuitive gameplay and stunning graphics make Escape to Adventure a must-play for any gaming enthusiast.
+            <br><br>
+            In Escape to Adventure, you'll have the opportunity to choose your own path and tailor your gameplay experience to your preferences. Do you want to focus on combat and defeat powerful bosses, or do you prefer to explore and uncover hidden secrets? The choice is yours! With multiple levels and challenges to conquer, there's always something new to discover in Escape to Adventure.
+            <br><br>
+            As you progress through the game, you'll have the opportunity to unlock new abilities and gear, allowing you to customize your character and enhance your gameplay experience. Whether you're a seasoned gamer or new to the world of video games, Escape to Adventure has something for everyone. So gather your friends and join the adventure today!
+            </p>
+
+        </div>
+
+    </body>
+</html> 
+
