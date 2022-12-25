@@ -11,48 +11,58 @@
 	</head>
 	<body>
 
-		<h1>
-			KVS Userdata
-		</h1>
-
 		<div class="main">
+			<br>
+			<h1>
+				[FAKE] Userdata
+			</h1>
 
 			<table>
 				<thead>
 					<tr>
-						<th>Name</th>
+						<th>Name </th>
 						<th>Room</th>
 						<th>B.Day</th>
 						<th>Tlf</th>
-						<th>S_Mail</th>
+						<th>Mail</th>
 					</tr>
 				</thead>
+				<br><tbody id="table"></tbody>
+			
+			</table>
+		
 
-				<tbody id="table"></tbody>
-			</div>
-		</table>
+			<script>
+				fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
+					.then(response => response.json())
+					.then(data => {
 
-
-		<script>
-			fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
-				.then(response => response.json())
-				.then(data => {
-					const table = document.getElementById('table');
-
-					for (let item in data) {
-						const tr = document.createElement('tr');
-						tr.innerHTML = `
-							<td>${item}</td>
-							<td>${data[item]["room"]}</td>
-							<td>${data[item]["bday"]}</td>
-							<td>${data[item]["tlf"]}</td>
-							<td>${data[item]["mail"]}</td>
-						`;
-						table.appendChild(tr);
-					};
-				}
-			);
+						const table = document.getElementById('table');
 						
-		</script>
+						/*
+						const tr = document.createElement('tr');
+						tr.innerHTML = `<br>`
+						table.appendChild(tr);
+						*/
+
+						for (let item in data) {
+							const tr = document.createElement('tr');
+							tr.innerHTML = `
+								<td>${item}</td>
+								<td>${data[item]["room"]}</td>
+								<td>${data[item]["bday"]}</td>
+								<td>${data[item]["tlf"]}</td>
+								<td>${data[item]["mail"]}</td>
+							`;
+							table.appendChild(tr);
+						};});
+							
+			</script>
+
+			<div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+
+		</div>
 	</body>
 </html>
