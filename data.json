@@ -1,10 +1,10 @@
 {
 	"Oscar Scar": {
 		"age": "26",
-		"room": "B17",
+        "room": "B17",
 		"bday": "14.04.04",
 		"tlf": "954 723 512",
-		"s.mail": "oscsc@kvs-lyngdal.no",
-		"p.mail": "oscar.scar@gmail.com"
+		"s_mail": "oscsc@kvs-lyngdal.no",
+		"p_mail": "oscar.scar@gmail.com"
 	}
 }

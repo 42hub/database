@@ -10,20 +10,47 @@
         </head>
     </head>
     <body>
-        <div id="data"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Room</th>
+                    <th>B.Day</th>
+                    <th>Tlf.</th>
+                    <th>S_Mail</th>
+                    <th>P_Mail</th>
+                </tr>
+            </thead>
+
+            <tbody id="table">
+            </tbody>
+
+        </table>
+
 
         <script>
             fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
                 .then(response => response.json())
                 .then(data => {
-                    const container = document.getElementById('data');
+                    const table = document.getElementById('table');
 
                     for (const item of data) {
-                    const p = document.createElement('p');
-                    p.innerHTML = `${item.name}: ${item.value}`;
-                    container.appendChild(p);
-                    }
-                });
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${item.age}</td>
+                            <td>${item.room}</td>
+                            <td>${item.bday}</td>
+                            <td>${item.tlf}</td>
+                            <td>${item.s_mail}</td>
+                            <td>${item.p_mail}</td>
+                        `;
+                        tableBody.appendChild(tr);
+                    };
+                }
+            );
+                        
         </script>
     </body>
 </html>
