@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Website</title>
+        <head>
+
+            <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    
+            <link rel="stylesheet" href="stylesheet.css">
+    
+        </head>
     </head>
     <body>
         <div id="data"></div>
 
         <script>
-            // Load and parse the JSON file
-            fetch('data.json')
+            fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
                 .then(response => response.json())
                 .then(data => {
-                    // Get the div element where we want to display the data
                     const container = document.getElementById('data');
 
-                    // Iterate over the data and create HTML elements for each item
                     for (const item of data) {
                     const p = document.createElement('p');
                     p.innerHTML = `${item.name}: ${item.value}`;
