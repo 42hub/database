@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <head>
+	<head>
+		<head>
 
-            <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-    
-            <link rel="stylesheet" href="stylesheet.css">
-    
-        </head>
-    </head>
-    <body>
+			<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	
+			<link rel="stylesheet" href="stylesheet.css">
+	
+		</head>
+	</head>
+	<body>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Room</th>
-                    <th>B.Day</th>
-                    <th>Tlf</th>
-                    <th>S_Mail</th>
-                </tr>
-            </thead>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Room</th>
+					<th>B.Day</th>
+					<th>Tlf</th>
+					<th>S_Mail</th>
+				</tr>
+			</thead>
 
-            <tbody id="table">
-            </tbody>
+			<tbody id="table">
+			</tbody>
 
-        </table>
+		</table>
 
 
-        <script>
-            fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
-                .then(response => response.json())
-                .then(data => {
-                    const table = document.getElementById('table');
+		<script>
+			fetch('https://raw.githubusercontent.com/42hub/database/main/data.json')
+				.then(response => response.json())
+				.then(data => {
+					const table = document.getElementById('table');
 
-                    for (let item in data) {
-                        const tr = document.createElement('tr');
-                        tr.innerHTML = `
-                            <td>${item}</td>
-                            <td>${data[item]["room"]}</td>
-                            <td>${data[item]["bday"]}</td>
-                            <td>${data[item]["tlf"]}</td>
-                            <td>${data[item]["mail"]}</td>
-                        `;
-                        table.appendChild(tr);
-                    };
-                }
-            );
-                        
-        </script>
-    </body>
+					for (let item in data) {
+						const tr = document.createElement('tr');
+						tr.innerHTML = `
+							<td>${item}</td>
+							<td>${data[item]["room"]}</td>
+							<td>${data[item]["bday"]}</td>
+							<td>${data[item]["tlf"]}</td>
+							<td>${data[item]["mail"]}</td>
+						`;
+						table.appendChild(tr);
+					};
+				}
+			);
+						
+		</script>
+	</body>
 </html>
