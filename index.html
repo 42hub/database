@@ -5,7 +5,7 @@
 
             <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     
-            <link rel="stylesheet" href="stylesheet.css">
+            <!--   <link rel="stylesheet" href="stylesheet.css"> -->
     
         </head>
     </head>
@@ -17,8 +17,8 @@
                     <th>Name</th>
                     <th>Age</th>
                     <th>Room</th>
-                    <th>B.Day</th>
-                    <th>Tlf.</th>
+                    <th>B_Day</th>
+                    <th>Tlf</th>
                     <th>S_Mail</th>
                     <th>P_Mail</th>
                 </tr>
@@ -39,6 +39,7 @@
                     for (const item of data) {
                         const tr = document.createElement('tr');
                         tr.innerHTML = `
+                            <td>${item}</td>
                             <td>${item.age}</td>
                             <td>${item.room}</td>
                             <td>${item.bday}</td>
